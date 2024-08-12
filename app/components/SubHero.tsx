@@ -1,7 +1,9 @@
+import { gluten } from "../lib/fonts";
+
 export default function SubHero() {
   return (
-    <article className="w-10/12 mx-auto">
-      <h1 className="text-3xl text-center font-semibold italic mt-6">
+    <article className={`${gluten.className} w-10/12 mx-auto`}>
+      <h1 className="text-blue-700 text-5xl text-center font-semibold italic mt-6">
         Uniting Youth. Building Strength. Empowering Community.
       </h1>
       <div className="flex">
@@ -47,7 +49,7 @@ export default function SubHero() {
           </p>
         </div>
       </div>
-      <a href="/about" className="block my-8 w-fit mx-auto border-2 p-2 rounded-md bg-blue-400 text-gray-900 border-gray-400 hover:border-black transition duration-300 linear hover:text-black">Read more about SYAA</a>
+      <a href="/about" className="block my-8 w-fit mx-auto border-2 p-4 rounded-md bg-blue-700 text-white border-gray-400 hover:border-black transition duration-300 linear hover:text-black">Read more about SYAA</a>
     </article>
   );
 }
