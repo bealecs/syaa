@@ -10,19 +10,19 @@ export default function Hero() {
       <HeroSportComponent
         isHovered={hoveredIndex === 0}
         onMouseEnter={() => setHoveredIndex(0)}
-        sport="Soccer"
+        sport="soccer"
         background="/soccer.svg"
       />
       <HeroSportComponent
         isHovered={hoveredIndex === 1}
         onMouseEnter={() => setHoveredIndex(1)}
-        sport={"Baseball/Softball"}
+        sport={"baseball-softball"}
         background="/baseball.svg"
       />
       <HeroSportComponent
         isHovered={hoveredIndex === 2}
         onMouseEnter={() => setHoveredIndex(2)}
-        sport="Field Hockey"
+        sport="field-hockey"
         background="/fieldhockey.svg"
       />
     </ul>

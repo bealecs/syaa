@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { ar } from "./lib/fonts";
+import { gluten } from "./lib/fonts";
 
 
 export const metadata: Metadata = {
@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <link rel="icon" href="/logo.svg"/>
-      <body className={ar.className}>{children}</body>
+      <body className={gluten.className}>{children}</body>
     </html>
   );
 }
