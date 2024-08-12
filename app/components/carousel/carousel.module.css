@@ -1,0 +1,30 @@
+.carousel-content {
+  display: flex;
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.icon-wrapper {
+  min-width: 400px; /* Adjust width as needed */
+  align-content: center;
+}
+
+.icon-wrapper img {
+  display: block;
+  margin: 0 auto;
+  height: 150px; /* Adjust as needed */
+}
+
+.icon-wrapper p {
+  font-size: 1.5rem; /* Adjust as needed */
+  font-weight: bold;
+  white-space: nowrap;
+}
