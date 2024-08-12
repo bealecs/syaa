@@ -15,7 +15,6 @@ export default function Home() {
       <Carousel />
       <VolunteersNeeded />
       <Reviews />
-      <Footer />
     </main>
   );
 }

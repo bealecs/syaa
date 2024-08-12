@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Styles from "./carousel.module.css";
-import { ar } from "../../lib/fonts"
+import { ar } from "../lib/fonts"
 
 interface Icons {
   src: string;

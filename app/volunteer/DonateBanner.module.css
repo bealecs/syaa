@@ -1,0 +1,12 @@
+@keyframes move-right {
+    0% {
+        transform: translateX(-150%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.animateMoveRight {
+    animation: move-right 10s linear infinite;
+}
