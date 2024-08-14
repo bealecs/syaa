@@ -126,7 +126,7 @@ export default function Coaching() {
             address below.
           </b>
         </li>
-        <li className="my-2">
+        <li className="my-2 text-2xl">
           <b>
             Please make checks payable to SYAA and mail a copy of the form with
             your check to:

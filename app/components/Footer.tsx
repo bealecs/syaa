@@ -15,9 +15,9 @@ export default function Footer() {
             <li><a href="/lightning-policy">Lightning Policy</a></li>
           </div>
           <div className="flex flex-col space-y-2 w-40">
-            <li>Volunteer</li>
-            <li>Scholarships</li>
-            <li>Refund Policy</li>
+            <li><a href="/volunteer">Volunteer</a></li>
+            <li><a href="/scholarships">Scholarships</a></li>
+            <li><a href="/refund-policy">Refund Policy</a></li>
           </div>
         </ul>
       </div>

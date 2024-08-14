@@ -12,7 +12,7 @@ export default function VolunteersNeeded() {
                 <br />
                 <p>Want to get more involved?  If you have the time, we have a role.</p>
                 <br />
-                <button className="my-6 border-2 border-blue-700 w-fit p-4 transition duration-300 linear hover:text-white hover:bg-blue-700 hover:border-black">View volunteer opportunities</button>
+                <a href="/volunteer" className="my-6 border-2 border-blue-700 w-fit p-4 transition duration-300 linear hover:text-white hover:bg-blue-700 hover:border-black">View volunteer opportunities</a>
             </div>
         </section>
     )

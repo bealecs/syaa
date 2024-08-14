@@ -1,0 +1,32 @@
+@keyframes tip {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(-20deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  .tipHat {
+    animation: tip 2s ease-in-out infinite;
+  }
+  
+  @keyframes heartbeat {
+    0% {
+      scale: 1;
+    }
+    50% {
+      scale: 1.2;
+    }
+    100% {
+      scale: 1;
+    }
+  }
+  
+  .heartbeat {
+    animation: heartbeat 3s ease-in-out infinite;
+  }
+  
