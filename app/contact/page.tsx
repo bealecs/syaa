@@ -32,7 +32,7 @@ export default function Contact() {
           <div className="mx-auto my-12 justify-evenly items-center content-center w-4/12 flex">
             <button
               onClick={handleSubtraction}
-              className="border-2 p-2 rounded-full"
+              className="border-2 p-2 rounded-full text-3xl bg-slate-200 text-blue-700"
             >
               {"<"}
             </button>
@@ -51,7 +51,7 @@ export default function Contact() {
             </div>
             <button
               onClick={handleAddition}
-              className="border-2 p-2 rounded-full"
+              className="border-2 p-2 rounded-full text-3xl bg-slate-200 text-blue-700"
             >
               {">"}
             </button>
@@ -66,7 +66,7 @@ export default function Contact() {
           <div className="mx-auto my-12 justify-evenly items-center content-center w-4/12 flex">
             <button
               onClick={handleSubtraction}
-              className="border-2 p-2 rounded-full"
+              className="border-2 p-2 rounded-full text-3xl bg-slate-200 text-blue-700"
             >
               {"<"}
             </button>
@@ -74,6 +74,10 @@ export default function Contact() {
               <Image src={"/logo.svg"} alt="SYAA Logo" height={150} width={150} className="mx-auto"/>
               <h2 className="text-center text-blue-700 text-3xl font-bold">Baseball/Softball</h2>
               <h4 className="text-center font-semibold text-xl">Joe Bidnick</h4>
+              <div className="flex content-center items-center m-8">
+                <Image src={"/viber.svg"} alt="SYAA Logo" height={50} width={50}/>
+                <p className="mx-4 text-2xl">(757) 763-0032</p>
+              </div>
               <div className="flex content-center items-center m-8 ">
                 <Image src={"/email.svg"} alt="SYAA Logo" height={50} width={50}/>
                 <p className="mx-4 text-xl">jbid621@gmail.com</p>
@@ -81,7 +85,7 @@ export default function Contact() {
             </div>
             <button
               onClick={handleAddition}
-              className="border-2 p-2 rounded-full"
+              className="border-2 p-2 rounded-full text-3xl bg-slate-200 text-blue-700"
             >
               {">"}
             </button>
@@ -96,7 +100,7 @@ export default function Contact() {
           <div className="mx-auto my-12 justify-evenly items-center content-center w-4/12 flex">
             <button
               onClick={handleSubtraction}
-              className="border-2 p-2 rounded-full"
+              className="border-2 p-2 rounded-full text-3xl bg-slate-200 text-blue-700"
             >
               {"<"}
             </button>
@@ -104,6 +108,10 @@ export default function Contact() {
               <Image src={"/logo.svg"} alt="SYAA Logo" height={150} width={150} className="mx-auto"/>
               <h2 className="text-center text-blue-700 text-3xl font-bold">Field Hockey</h2>
               <h4 className="text-center font-semibold text-xl">Jazmyne Johnson / Sierra Chavis</h4>
+              <div className="flex content-center items-center m-8">
+                <Image src={"/viber.svg"} alt="SYAA Logo" height={50} width={50}/>
+                <p className="mx-4 text-2xl">(757) 651-7367</p>
+              </div>
               <div className="flex content-center items-center m-8 ">
                 <Image src={"/email.svg"} alt="SYAA Logo" height={50} width={50}/>
                 <p className="mx-4 text-xl">FieldHockey@syaasuffolkfc.org</p>
@@ -111,7 +119,7 @@ export default function Contact() {
             </div>
             <button
               onClick={handleAddition}
-              className="border-2 p-2 rounded-full"
+              className="border-2 p-2 rounded-full text-3xl bg-slate-200 text-blue-700"
             >
               {">"}
             </button>

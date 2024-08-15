@@ -9,7 +9,7 @@ export default function Footer() {
         <h4 className="text-3xl font-semibold">Resources</h4>
         <ul className="flex space-x-4">
           <div className="flex flex-col space-y-2 w-40">
-            <li>Location</li>
+            <li><a href="/location">Location</a></li>
             <li><a href="/contact">Contact Us</a></li>
             <li><a href="/about">About Us</a></li>
             <li><a href="/lightning-policy">Lightning Policy</a></li>
@@ -18,6 +18,7 @@ export default function Footer() {
             <li><a href="/volunteer">Volunteer</a></li>
             <li><a href="/scholarships">Scholarships</a></li>
             <li><a href="/refund-policy">Refund Policy</a></li>
+            <li><a href="/important-documents">Important Documents</a></li>
           </div>
         </ul>
       </div>
