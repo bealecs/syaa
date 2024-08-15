@@ -12,7 +12,7 @@ export default function FAQ({ sport, faq }: FAQ) {
       <h1 className="text-blue-700 font-semibold text-5xl mt-8 text-center">Frequently Asked Questions (FAQ)</h1>
       <aside className="text-center italic mb-8">
         Below are some of the most frequently asked questions in regards to
-        SYAA's {sport}
+     {sport} at SYAA
       </aside>
       {faq &&
         faq.map((faq) => {
