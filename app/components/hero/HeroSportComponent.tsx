@@ -7,13 +7,14 @@ interface SportComponentParams {
 
 export default function HeroSportComponent({ isHovered, onMouseEnter, sport, background}: SportComponentParams) {
   return (
-    <section
+    <a
+      href={`/${sport}`}
       className={`${
         isHovered ? "w-6/12" : "w-3/12"
       } lg:h-[75vh] transition-all duration-300 linear bg-blue-500 border-r-2`}
       onMouseEnter={onMouseEnter}
       style={{ backgroundImage: `url(${background})`, backgroundSize:"cover", backgroundPosition:"center"}}
-    >
-    </section>
+    >{isHovered && <div className="min-h-full bg-gray-900 items-center content-center mx-auto bg-opacity-50"><p className="mx-auto text-4xl text-gray-100 w-fit">{sport.toUpperCase()}</p></div>}
+    </a>
   );
 }

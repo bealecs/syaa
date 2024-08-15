@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Styles from "./carousel.module.css";
-import { ar } from "../../lib/fonts"
+import { ar } from "../lib/fonts"
 
 interface Icons {
   src: string;
@@ -43,7 +43,7 @@ export default function Carousel() {
   ];
 
   return (
-    <div className={`${ar.className} flex w-9/12 mx-auto justify-evenly my-24 overflow-hidden`}>
+    <div className={`${ar.className} flex w-10/12 mx-auto justify-evenly my-24 overflow-hidden`}>
       <div className={Styles["carousel-content"]}>
         {iconArray.map((icon, index) => {
           return (
