@@ -10,7 +10,9 @@ export default function Home() {
   return (
     <main>
       <Header />
+      <div className="hidden lg:block">
       <Hero />
+      </div>
       <SubHero />
       <Carousel />
       <VolunteersNeeded />

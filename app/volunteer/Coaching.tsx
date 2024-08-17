@@ -2,7 +2,7 @@ export default function Coaching() {
   return (
     <div>
       <div className="bg-slate-200 p-4 rounded-md">
-      <h2 className="text-4xl mt-4 text-blue-700">Coaching</h2>
+      <h2 className="lg:text-4xl text-2xl mt-4 text-blue-700">Coaching</h2>
       <p className="text-base">
         Coaches & Assistant Coaches are needed at all levels - recreational,
         advanced, and select travel. SYAA will provide training through
@@ -43,7 +43,7 @@ export default function Coaching() {
       </ul>
       </div>
       <div className="bg-slate-200 rounded-md p-4 my-8">
-      <h2 className="text-4xl text-blue-700">
+      <h2 className="text-2xl lg:text-4xl text-blue-700">
         Advanced Recreational Division Coaching
       </h2>
       <p className="text-base">
@@ -74,7 +74,7 @@ export default function Coaching() {
       </ul>
       </div>
       <div className="bg-slate-200 rounded-md my-8 p-4">
-      <h2 className="text-4xl text-blue-700">Travel Coaches</h2>
+      <h2 className="text-2xl lg:text-4xl text-blue-700">Travel Coaches</h2>
       <p className="text-base">In addition to the requirements above:</p>
       <ul className="mb-8">
         <li className="my-2">

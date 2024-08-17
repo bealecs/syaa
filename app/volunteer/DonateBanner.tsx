@@ -17,14 +17,14 @@ export default function DonateBanner() {
             rel="noopener noreffer"
           >
             <h1
-              className={`text-5xl text-green-900 ${Styles.animateMoveRight}`}
+              className={`${Styles.animateMoveRight} text-xl lg:text-5xl text-green-900`}
             >
               Click here to donate to SYAA
             </h1>
           </a>
           <button
             onClick={() => setCloseBanner(!closeBanner)}
-            className="text-5xl text-red-800 mr-4"
+            className="text-xl lg:text-5xl text-red-800 mr-4"
           >
             X
           </button>{" "}

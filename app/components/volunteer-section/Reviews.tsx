@@ -13,7 +13,7 @@ export default function Reviews() {
       <h4 className="text-3xl text-center my-8">
         What do people think about SYAA?
       </h4>
-      <div className="w-10/12 mx-auto block bg-slate-200 p-4 mb-8">
+      <div className="m-4 lg:w-10/12 lg:mx-auto block bg-slate-200 p-4 mb-8">
         <p>
           &quot;This is a great place to bring your kids for soccer, baseball, and
           softball. It&apos;s a great experience. My kids love playing baseball out
@@ -26,7 +26,7 @@ export default function Reviews() {
         </p>
         <h4 className="font-bold text-2xl my-2">Rick Ilich</h4>
       </div>
-      <div className="w-10/12 mx-auto block bg-slate-200 p-4 mb-8">
+      <div className="m-4 lg:w-10/12 lg:mx-auto block bg-slate-200 p-4 mb-8">
         <p>
           &quot;We switched from BCLL and while the commute was significantly longer,
           it was well worth it. Games weren&apos;t cancelled often due to &quot;possible&quot;
@@ -36,7 +36,7 @@ export default function Reviews() {
         </p>
         <h4 className="font-bold text-2xl my-2">Hanna Bennett</h4>
       </div>
-      <div className="w-10/12 mx-auto block bg-slate-200 p-4 mb-8">
+      <div className="m-4 lg:w-10/12 lg:mx-auto block bg-slate-200 p-4 mb-8">
         <p>
           &quot;We&apos;ve been involved with multiple organizations over the past 10
           years and this is by far the best. The level of coaching at our
@@ -47,7 +47,7 @@ export default function Reviews() {
         </p>
         <h4 className="font-bold text-2xl my-2">Larry O&apos;Brien</h4>
       </div>
-      <div className="w-10/12 mx-auto block bg-slate-200 p-4 mb-8">
+      <div className="m-4 lg:w-10/12 lg:mx-auto block bg-slate-200 p-4 mb-8">
         <p>
           &quot;Great Organization! Very organized and the commissioners and coaches
           are top notch. We&apos;ve definitely made some lasting friendships through
@@ -55,7 +55,7 @@ export default function Reviews() {
         </p>
         <h4 className="font-bold text-2xl my-2">Mari Burrell</h4>
       </div>
-      <div className="w-10/12 mx-auto block bg-slate-200 p-4 mb-8">
+      <div className="m-4 lg:w-10/12 lg:mx-auto block bg-slate-200 p-4 mb-8">
         <p>
           &quot;I played at SYAA from coach pitch baseball all the way through to the
           Pony league (13-14y). I practically lived at the ballfield and I

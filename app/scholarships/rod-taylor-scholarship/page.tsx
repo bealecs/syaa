@@ -4,7 +4,7 @@ import { ar } from "../../components/lib/fonts";
 
 export default function RodTaylorScholarship() {
   return (
-    <article className={`${ar.className} w-10/12 mx-auto text-xl`}>
+    <article className={`${ar.className} m-4 lg:w-10/12 lg:mx-auto text-xl`}>
       <PageBackButton href="/scholarships" text="Back to previous page" />
       <Image
         src={"/logo.svg"}

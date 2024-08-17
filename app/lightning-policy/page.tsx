@@ -4,9 +4,9 @@ import { ar } from "../components/lib/fonts";
 
 export default function Lightning() {
   return (
-    <article className={`${ar.className} w-10/12 mx-auto text-xl`}>
+    <article className={`${ar.className} lg:w-10/12 lg:mx-auto m-4 text-xl`}>
       <PageBackButton href="/" text="Back to main page" />
-      <Image src={"/logo.svg"} alt="SYAA Logo" height={150} width={150} className="mx-auto" />
+      <Image src={"/logo.svg"} alt="SYAA Logo" height={150} width={150} className="mx-auto my-4" />
       <h1 className="text-4xl text-blue-700">Thunder & Lightning Policy</h1>
       <h4 className="text-blue-700 my-8 text-2xl">
         SYAA follows the 30/30 rule:

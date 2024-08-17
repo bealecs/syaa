@@ -1,28 +1,57 @@
 .hockeyBall {
-    position: relative;
-    animation: roll 6s linear infinite, spin 6s linear infinite;
+  position: relative;
+  animation: roll 6s linear infinite, spin 6s linear infinite;
 }
-  
+
 @keyframes roll {
-    0% {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 95%; 
+  }
+  100% {
       left: 0;
-    }
-    50% {
-      left: 95%; 
-    }
-    100% {
-        left: 0;
-    }
+  }
 }
-  
+
 @keyframes spin {
-    0% {
-      transform: translateY(-50%) rotate(0deg);
-    }
-    50% {
-      transform: translateY(-50%) rotate(720deg);
-    }
-    100% {
-        transform: translateY(-50%) rotate(-360deg);
-    }
+  0% {
+    transform: translateY(-50%) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-50%) rotate(720deg);
+  }
+  100% {
+      transform: translateY(-50%) rotate(-360deg);
+  }
+}
+
+.smallHockeyBall {
+position: relative;
+animation: roll 6s linear infinite, spin 6s linear infinite;
+}
+
+@keyframes smallRoll {
+0% {
+  left: 0;
+}
+50% {
+  left: 60%; 
+}
+100% {
+    left: 0;
+}
+}
+
+@keyframes smallSpin {
+0% {
+  transform: translateY(-50%) rotate(0deg);
+}
+50% {
+  transform: translateY(0%) rotate(180deg);
+}
+100% {
+    transform: translateY(-50%) rotate(-360deg);
+}
 }
