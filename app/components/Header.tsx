@@ -2,6 +2,9 @@
 import Image from "next/image";
 import { ar } from "./lib/fonts";
 import { useState } from "react";
+import HamburgerMenu from "./lib/svg-components/HamburgerMenu";
+import Close from "./lib/svg-components/Close";
+import Logo from "./lib/svg-components/Logo";
 
 export default function Header() {
   const [hamburgerClicked, setHamburgerClicked] = useState(false);
@@ -22,24 +25,14 @@ export default function Header() {
   
   
       <a href="/">
-        <Image src={"/logo.svg"} width={150} height={150} alt="logo for SYAA" />
+        <Logo />
       </a>
 
       <button onClick={handleClick} className="block md:hidden">
         {hamburgerClicked ? (
-          <Image
-            src={"/Close.svg"}
-            alt="hamburger menu icon"
-            height={50}
-            width={50}
-          />
+          <Close />
         ) : (
-          <Image
-            src={"/Menu.svg"}
-            alt="hamburger menu icon"
-            height={50}
-            width={50}
-          />
+          <HamburgerMenu />
         )}
       </button>
 
@@ -48,7 +41,7 @@ export default function Header() {
           hamburgerClicked ? "block" : "hidden"
         } absolute top-[140px] left-0 w-full bg-[#0066CC] text-center md:hidden`}
       >
-        <li className="p-4 border-b border-gray-300">
+        <li className="p-2 border-b border-gray-300">
           <button
             onClick={handleSportsClick}
             className="text-[#F0F0F0] text-xl font-semibold hover:text-red-500"
