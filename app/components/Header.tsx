@@ -53,16 +53,8 @@ export default function Header() {
             onClick={handleSportsClick}
             className="text-[#F0F0F0] text-xl font-semibold hover:text-red-500"
           >
-            {sportsClicked ? <><span className="mx-2">&#x25C0;</span>Back</> : <>Sports <span className="text-sm">&#9660;</span></>}
+            {sportsClicked ? <>Quick Links <span className="text-sm">&#9660;</span></> : <>Sports <span className="text-sm">&#9660;</span></>}
           </button>
-        </li>
-        <li className="p-4 border-b border-gray-300">
-          <a
-            href={sportsClicked ? "/soccer" : "/about"}
-            className="text-[#F0F0F0] text-xl font-semibold hover:text-red-500"
-          >
-            {sportsClicked ? "Soccer" : "About SYAA"}
-          </a>
         </li>
         <li className="p-4 border-b border-gray-300">
           <a
@@ -70,6 +62,14 @@ export default function Header() {
             className="text-[#F0F0F0] text-xl font-semibold hover:text-red-500"
           >
             {sportsClicked ? "Baseball/Softball" : "Volunteer"}
+          </a>
+        </li>
+        <li className="p-4 border-b border-gray-300">
+          <a
+            href={sportsClicked ? "/soccer" : "/about-page"}
+            className="text-[#F0F0F0] text-xl font-semibold hover:text-red-500"
+          >
+            {sportsClicked ? "Soccer" : "About SYAA"}
           </a>
         </li>
         <li className="p-4">

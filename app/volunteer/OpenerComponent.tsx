@@ -1,53 +1,58 @@
-import Image from "next/image";
+import BaseballHelmet from "../components/lib/svg-components/BaseballHelmet";
+import Deal from "../components/lib/svg-components/Deal";
+import Gardener from "../components/lib/svg-components/Gardener";
+import Group from "../components/lib/svg-components/Group";
+import Hammer from "../components/lib/svg-components/Hammer";
+import Meeting from "../components/lib/svg-components/Meeting";
+import Referee from "../components/lib/svg-components/Referee";
+import Stall from "../components/lib/svg-components/Stall";
 
-const opportunities = [
+interface Opportunity {
+  name: string;
+  role: string;
+  imageUrl: React.ReactNode;
+}
+
+const opportunities: Opportunity[] = [
   {
     name: "Property & Equipment Maintenance",
     role: "Building upkeep, cleaning, and minor repairs",
-    imageUrl:
-      "/Hammer.svg",
+    imageUrl: <Hammer />,
   },
   {
     name: "General Field Maintenance",
     role: "Cutting grass, lining fields, installing goal nets, etc.",
-    imageUrl:
-      "/Gardener.svg",
+    imageUrl: <Gardener />,
   },
   {
     name: "Concession Stand Duty",
     role: "Management or staffing of food production",
-    imageUrl:
-      "/Stall.svg",
+    imageUrl: <Stall />,
   },
   {
     name: "Equipment Managers",
     role: "Maintain stock of inventory for teams",
-    imageUrl:
-      "/Baseball-helmet.svg",
+    imageUrl: <BaseballHelmet />,
   },
   {
     name: "Team Managers",
     role: "Assists coaches w/team organization & communication",
-    imageUrl:
-      "/Group.svg",
+    imageUrl: <Group />,
   },
   {
     name: "Sponsorship Outreach",
     role: "Help promote SYAA to potential sponsors or advertisers",
-    imageUrl:
-      "/Deal.svg",
+    imageUrl: <Deal />,
   },
   {
     name: "SYAA Board of Directors (all sports)",
     role: "Assist in running the SYAA organization",
-    imageUrl:
-      "/Meeting.svg",
+    imageUrl: <Meeting />,
   },
   {
     name: "Support Referee Training",
     role: "In-house, youth referee training program",
-    imageUrl:
-      "/Referee.svg",
+    imageUrl: <Referee />,
   },
 ];
 
@@ -64,7 +69,9 @@ export default function OpenerComponent() {
             you’re interested in helping out in anyway, and we’ll find a fit for
             you!
           </p>
-        <button className="my-12 transition duration-300 linear hover:text-white hover:bg-blue-700 hover:border-black border-2 border-blue-700 text-xl p-4 w-full"><a href="mailto:suffolkscorpions@gmail.com">I can help!</a></button>
+          <button className="my-12 transition duration-300 linear hover:text-white hover:bg-blue-700 hover:border-black border-2 border-blue-700 text-xl p-4 w-full">
+            <a href="mailto:suffolkscorpions@gmail.com">I can help!</a>
+          </button>
         </div>
         <ul
           role="list"
@@ -73,13 +80,7 @@ export default function OpenerComponent() {
           {opportunities.map((opportunity) => (
             <li key={opportunity.name}>
               <div className="flex items-center gap-x-6">
-                <Image
-                  alt={opportunity.role}
-                  src={opportunity.imageUrl}
-                  className="group"
-                  height={50}
-                  width={50}
-                />
+                {opportunity.imageUrl}
                 <div>
                   <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">
                     {opportunity.name}
@@ -93,7 +94,7 @@ export default function OpenerComponent() {
           ))}
         </ul>
       </div>
-      <hr className="mt-8"/>
+      <hr className="mt-8" />
     </div>
   );
 }

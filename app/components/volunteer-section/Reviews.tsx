@@ -1,15 +1,12 @@
 import Image from "next/image";
+import Star from "../lib/svg-components/Star";
 
 export default function Reviews() {
   return (
     <section>
-      <Image
-        src={"/5-star.svg"}
-        alt="5 stars in a row indicating a good rating"
-        height={400}
-        width={400}
-        className="mx-auto"
-      />
+      <div className="mx-auto w-fit">
+      <Star />
+      </div>
       <h4 className="text-3xl text-center my-8">
         What do people think about SYAA?
       </h4>

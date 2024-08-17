@@ -1,7 +1,11 @@
 import Image from "next/image";
 import PageBackButton from "../components/lib/PageBackButton";
 import PriceDivisions from "./PriceDivisions";
+import BaseballIcon, {
+  BaseballIcon2,
+} from "../components/lib/svg-components/BaseballIcon";
 import Styles from "./ball.module.css";
+import Viber from "../components/lib/svg-components/Viber";
 
 export default function BaseballSoftball() {
   return (
@@ -11,7 +15,9 @@ export default function BaseballSoftball() {
       </div>
       <div className="lg:flex justify-between items-center">
         <div className="flex-col">
-          <h1 className="lg:text-6xl text-3xl text-blue-700">SYAA Baseball/Softball</h1>
+          <h1 className="lg:text-6xl text-3xl text-blue-700">
+            SYAA Baseball/Softball
+          </h1>
           <h4 className="my-4">Sections:</h4>
           <div className="flex text-blue-700 underline">
             <a
@@ -37,20 +43,20 @@ export default function BaseballSoftball() {
             </a>
           </div>
         </div>
-        <Image src="/logo.svg" alt="SYAA logo" height={150} width={150} className="hidden lg:block" />
+        <Image
+          src="/logo.svg"
+          alt="SYAA logo"
+          height={150}
+          width={150}
+          className="hidden lg:block"
+        />
       </div>
-    <div className="w-[90%] lg:w-full mt-24">
-    <Image
-        src="/baseballroller.svg"
-        alt="Baseball rolling across the top of the page"
-        className={`lg:${Styles.baseball} ${Styles.smallBaseball}  h-[75px] w-[75px] lg:w-[128px] lg:h-[128px]`}
-        width={128}
-        height={128}
-      />
-    </div>
-     
+      <div className={`w-fit mt-24 ${Styles.baseball}`}>
+        <BaseballIcon2 />
+      </div>
+
       <div className="hidden lg:block">
-      <PriceDivisions />
+        <PriceDivisions />
       </div>
       <hr />
       <div className="lg:flex justify-start my-8">
@@ -153,13 +159,7 @@ export default function BaseballSoftball() {
         <div className="w-6/12 lg:w-fit border-2 border-blue-700 lg:border-0  lg:mx-auto">
           <h4 className="text-xl">T-Ball </h4>
           <div className="flex items-center my-2">
-            <Image
-              src={"/viber.svg"}
-              width={50}
-              height={50}
-              alt="phone icon"
-              className="mx-auto"
-            />
+            <Viber />
             <p className="px-2">(757) 646-9455</p>
           </div>
           <h4>Will Parker</h4>
@@ -167,13 +167,7 @@ export default function BaseballSoftball() {
         <div className="w-6/12 lg:w-fit border-2 border-blue-700 lg:border-0  lg:mx-auto">
           <h4 className="text-xl">Pinto </h4>
           <div className="flex items-center my-2">
-            <Image
-              src={"/viber.svg"}
-              width={50}
-              height={50}
-              alt="phone icon"
-              className="mx-auto"
-            />
+            <Viber />
             <p className="mx-2">(757) 510-4307</p>
           </div>
           <h4>Aaron Carnegie</h4>
@@ -181,13 +175,7 @@ export default function BaseballSoftball() {
         <div className="w-6/12 lg:w-fit border-2 border-blue-700 lg:border-0  lg:mx-auto">
           <h4 className="text-xl">Mustang </h4>
           <div className="flex items-center my-2">
-            <Image
-              src={"/viber.svg"}
-              width={50}
-              height={50}
-              alt="phone icon"
-              className="mx-auto"
-            />
+            <Viber />
             <p className="mx-2">(757) 338-3475</p>
           </div>
           <h4>Corey Holmes</h4>
@@ -195,13 +183,7 @@ export default function BaseballSoftball() {
         <div className="w-6/12 lg:w-fit border-2 border-blue-700 lg:border-0  lg:mx-auto">
           <h4 className="text-xl">Bronco </h4>
           <div className="flex items-center my-2">
-            <Image
-              src={"/viber.svg"}
-              width={50}
-              height={50}
-              alt="phone icon"
-              className="mx-auto"
-            />
+            <Viber />
             <p className="px-2">(843) 408-3334</p>
           </div>
           <h4>James Morrison</h4>
@@ -209,13 +191,7 @@ export default function BaseballSoftball() {
         <div className="w-6/12 lg:w-fit border-2 border-blue-700 lg:border-0  lg:mx-auto">
           <h4 className="text-xl">Pony </h4>
           <div className="flex items-center my-2">
-            <Image
-              src={"/viber.svg"}
-              width={50}
-              height={50}
-              alt="phone icon"
-              className="mx-auto"
-            />
+            <Viber />
             <p className="mx-2">(757) 334-3020</p>
           </div>
           <h4>Brian Smith</h4>
@@ -223,13 +199,7 @@ export default function BaseballSoftball() {
         <div className="w-6/12 lg:w-fit border-2 border-blue-700 lg:border-0  lg:mx-auto">
           <h4 className="text-xl">Colt </h4>
           <div className="flex items-center my-2">
-            <Image
-              src={"/viber.svg"}
-              width={50}
-              height={50}
-              alt="phone icon"
-              className="mx-auto"
-            />
+            <Viber />
             <p className="mx-2">(757) 621-9911</p>
           </div>
           <h4>Jeff Beale</h4>
@@ -237,13 +207,7 @@ export default function BaseballSoftball() {
         <div className="w-6/12 lg:w-fit border-2 border-blue-700 lg:border-0  lg:mx-auto">
           <h4 className="text-xl">Softball Commissioner</h4>
           <div className="flex items-center my-2">
-            <Image
-              src={"/viber.svg"}
-              width={50}
-              height={50}
-              alt="phone icon"
-              className="mx-auto"
-            />
+            <Viber />
             <p className="mx-2">(804) 926-6087</p>
           </div>
           <h4>Kasie Wilson</h4>

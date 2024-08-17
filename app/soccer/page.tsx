@@ -3,6 +3,7 @@ import PageBackButton from "../components/lib/PageBackButton";
 import PriceDivisions from "./PriceDivisions";
 import Styles from "./soccer.module.css";
 import FAQ from "../components/lib/FAQ";
+import Soccerball2 from "../components/lib/svg-components/Soccerball2";
 
 const SFAQ = [
   {
@@ -76,15 +77,10 @@ export default function Soccer() {
         </div>
         <Image src="/logo.svg" alt="SYAA logo" height={150} width={150} className="hidden lg:block" />
       </div>
-      <div className="w-[90%]">
-      <Image
-        src="/soccerBall.svg"
-        alt="Soccer ball icon rolling across the top of the page"
-        className={`lg:${Styles.soccerBall} ${Styles.smallSoccerBall} h-[75px] w-[75px] lg:h-[150px] lg:w-[150px] mt-24`}
-        width={128}
-        height={128}
-      />
+      <div className={`w-fit mt-24 ${Styles.soccerBall}`}>
+      <Soccerball2 />
       </div>
+      
       
       <div className="hidden lg:block">
       <PriceDivisions />

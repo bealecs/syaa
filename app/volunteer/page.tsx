@@ -7,7 +7,7 @@ export default function Volunteer() {
   return (
     <>
       <DonateBanner />
-      <div className="w-10/12 mx-auto">
+      <div className="lg:w-10/12 lg:mx-auto m-4">
         <PageBackButton href="/" text="Back to main page" />
         <OpenerComponent />
         <Coaching />
