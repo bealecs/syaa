@@ -35,7 +35,7 @@ export default function Header() {
           />
         ) : (
           <Image
-            src={"/menu.svg"}
+            src={"/Menu.svg"}
             alt="hamburger menu icon"
             height={50}
             width={50}
