@@ -1,20 +1,21 @@
 
 export default function SubHero() {
   return (
-    <article className=" w-10/12 mx-auto">
-      <h1 className="text-blue-700 text-5xl text-center font-semibold italic mt-6">
+    <article className="m-4 lg:w-10/12 lg:mx-auto">
+      <h1 className="text-blue-700 text-3xl lg:text-5xl text-center font-semibold italic mt-6">
         Uniting Youth. Building Strength. Empowering Community.
       </h1>
-      <div className="flex">
-        <div className="flex flex-col">
-        <h2 className="text-3xl font-semibold mt-8">Why SYAA?</h2>
-        <aside className="mb-4">Suffolk Youth Athletic Association</aside>
+      <div className="lg:flex">
+        <div className="lg:flex lg:flex-col">
+        <h2 className="text-2xl lg:text-3xl font-semibold mt-8">Why SYAA?</h2>
+        <aside className="lg:mb-4">Suffolk Youth Athletic Association</aside>
           <iframe
             src="https://player.vimeo.com/video/464528560?h=b104bb1c15"
             width="640"
             height="360"
             allow="autoplay; fullscreen; picture-in-picture"
             allowFullScreen
+            className="lg:w-[640px] lg:h-[360px] w-[400px] h-[250px]"
           ></iframe>
           <p className="font-semibold italic mb-8">
             <a href="https://vimeo.com/464528560">
@@ -24,7 +25,7 @@ export default function SubHero() {
             <a href="https://vimeo.com">Vimeo</a>.
           </p>
         </div>
-        <div className="mt-24 mx-8">
+        <div className="lg:mt-24 lg:mx-8">
           <p className="leading-loose text-xl">
             SYAA understands the importance of quality time, that’s why we’re
             proud to be the only club in Tidewater where you can play 3 youth

@@ -4,9 +4,9 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
   return (
     <>
-    <section className={`${ar.className} border-t-2 flex bg-[#0066CC] text-[#F0F0F0] justify-evenly`}>
+    <section className={`${ar.className} p-4 border-t-2 flex bg-[#0066CC] text-[#F0F0F0] justify-evenly`}>
       <div className="flex-col mb-4">
-        <h4 className="text-3xl font-semibold">Resources</h4>
+        <h4 className="text-2xl lg:text-3xl font-semibold">Resources</h4>
         <ul className="flex space-x-4">
           <div className="flex flex-col space-y-2 w-40">
             <li><a href="/location">Location</a></li>
@@ -18,12 +18,12 @@ export default function Footer() {
             <li><a href="/volunteer">Volunteer</a></li>
             <li><a href="/scholarships">Scholarships</a></li>
             <li><a href="/refund-policy">Refund Policy</a></li>
-            <li><a href="/important-documents">Important Documents</a></li>
+            <li><a href="/important-documents">Documents</a></li>
           </div>
         </ul>
       </div>
       <div className="flex-col mb-4">
-        <h4 className="text-3xl font-semibold">Links</h4>
+        <h4 className="text-2xl lg:text-3xl font-semibold">Links</h4>
         <ul className="flex space-x-4">
           <div className="flex flex-col space-y-2 w-50">
             <li><a href="https://www.facebook.com/SYAASoccer/" target="_blank" rel="noopener noreffer">Facebook - Soccer</a></li>

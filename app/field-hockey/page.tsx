@@ -2,7 +2,7 @@ import Image from "next/image";
 import PageBackButton from "../components/lib/PageBackButton";
 import PriceDivisions from "./PriceDivisions";
 import Styles from "./FieldHockey.module.css";
-import FAQ from "../components/FAQ";
+import FAQ from "../components/lib/FAQ";
 
 export default function FieldHockey() {
   const currentYear = new Date().getFullYear();
@@ -41,13 +41,13 @@ export default function FieldHockey() {
   ];
   
   return (
-    <section className="my-12 w-10/12 mx-auto">
+    <section className="m-4 lg:w-10/12 lg:mx-auto">
       <div className="my-8">
         <PageBackButton href="/" text="Back to main page" />
       </div>
       <div className="flex justify-between items-center">
         <div className="flex-col">
-          <h1 className="text-6xl text-blue-700">SYAA Field Hockey</h1>
+          <h1 className="lg:text-6xl text-3xl text-blue-700">SYAA Field Hockey</h1>
           <h4 className="my-4">Sections:</h4>
           <div className="flex text-blue-700 underline">
             <a
@@ -61,20 +61,24 @@ export default function FieldHockey() {
             </a>
           </div>
         </div>
-        <Image src="/logo.svg" alt="SYAA logo" height={150} width={150} />
+        <Image src="/logo.svg" alt="SYAA logo" height={150} width={150} className="hidden md:block"/>
       </div>
-
+      <div className="w-[90%] lg:w-full">
       <Image
         src="/hockeyBall.svg"
         alt="Field Hockey ball rolling across the top of the page"
-        className={`${Styles.hockeyBall} mt-24`}
+        className={`lg:${Styles.hockeyBall} ${Styles.smallHockeyBall} mt-24 w-[75px] h-[75px] lg:w-[128px] lg:h-[128px]`}
         width={128}
         height={128}
       />
+      </div>
+      
+      <div className="hidden lg:block">
       <PriceDivisions />
+      </div>
       <hr />
-      <div className="flex justify-start my-8">
-        <div className="w-7/12">
+      <div className="lg:flex justify-start my-8">
+        <div className="lg:w-7/12">
           <h3 className="text-3xl text-blue-700">Important Info</h3>
           <ul className="list-disc ml-4">
             <li className="my-2 font-semibold text-xl">
@@ -95,8 +99,8 @@ export default function FieldHockey() {
             </li>
           </ul>
         </div>
-        <div className="w-3/12 mx-auto">
-          <h3 className="text-center text-2xl text-blue-700">
+        <div className="lg:w-3/12 mx-auto">
+          <h3 className="lg:text-center my-4 text-2xl text-blue-700">
             How our age brackets work
           </h3>
           <p className="my-4">
@@ -114,14 +118,14 @@ export default function FieldHockey() {
       </div>
 
       <div id="summer" className="my-8 bg-slate-200 p-4 rounded-md">
-        <h3 className="text-3xl text-blue-700">Summer Camp</h3>
-        <p className="text-xl my-4 leading-loose">Information Pending...</p>
+        <h3 className="lg:text-3xl text-2xl text-blue-700">Summer Camp</h3>
+        <p className="lg:text-xl my-4 leading-loose">Information Pending...</p>
       </div>
       <div id="winter" className="my-8 bg-slate-200 p-4 rounded-md">
-        <h3 className="text-3xl text-blue-700">
+        <h3 className="lg:text-3xl text-2xl text-blue-700">
           Winter League/Indoor Training
         </h3>
-        <p className="text-xl my-4 leading-loose">Information Pending...</p>
+        <p className="lg:text-xl my-4 leading-loose">Information Pending...</p>
       </div>
       <FAQ sport="Field-Hockey" faq={FHFAQ} />
       <h4 className="text-3xl text-center my-8">

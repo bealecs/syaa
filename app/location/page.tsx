@@ -4,14 +4,14 @@ import { ar } from "../components/lib/fonts";
 
 export default function Location() {
   return (
-    <article className={`${ar.className} w-10/12 min-h-[60vh] mx-auto text-xl`}>
+    <article className={`${ar.className} m-4 lg:w-10/12 min-h-[60vh] lg:mx-auto text-xl`}>
       <PageBackButton href="/" text="Back to main page" />
       <Image
         src={"/logo.svg"}
         alt="SYAA Logo"
         height={150}
         width={150}
-        className="mx-auto"
+        className="mx-auto my-4"
       />
       <h1 className="text-4xl text-blue-700">SYAA Location</h1>
       <p className="text-2xl font-semibold mt-8">
@@ -24,7 +24,7 @@ export default function Location() {
         across from the power station (northside of road).
       </p>
       <br />
-      <div className="flex justify-evenly text-xl font-semibold">
+      <div className="lg:flex justify-evenly text-xl font-semibold">
         <div className="text-center text-xl font-semibold my-12 border-2 border-blue-700 rounded-md w-fit mx-auto p-4">
           <h4 className="text-3xl text-blue-700">Baseball/Softball:</h4>
           <p>432 Kings Fork Road</p>

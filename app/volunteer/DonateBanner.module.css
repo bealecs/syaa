@@ -8,5 +8,5 @@
 }
 
 .animateMoveRight {
-    animation: move-right 10s linear infinite;
+    animation: move-right 5s linear infinite;
 }

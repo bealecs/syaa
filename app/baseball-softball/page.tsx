@@ -5,13 +5,13 @@ import Styles from "./ball.module.css";
 
 export default function BaseballSoftball() {
   return (
-    <section className="my-12 w-10/12 mx-auto">
-      <div className="my-8">
+    <section className="lg:my-12 lg:w-10/12 lg:mx-auto mx-4">
+      <div className="lg:my-8">
         <PageBackButton href="/" text="Back to main page" />
       </div>
-      <div className="flex justify-between items-center">
+      <div className="lg:flex justify-between items-center">
         <div className="flex-col">
-          <h1 className="text-6xl text-blue-700">SYAA Baseball/Softball</h1>
+          <h1 className="lg:text-6xl text-3xl text-blue-700">SYAA Baseball/Softball</h1>
           <h4 className="my-4">Sections:</h4>
           <div className="flex text-blue-700 underline">
             <a
@@ -37,20 +37,24 @@ export default function BaseballSoftball() {
             </a>
           </div>
         </div>
-        <Image src="/logo.svg" alt="SYAA logo" height={150} width={150} />
+        <Image src="/logo.svg" alt="SYAA logo" height={150} width={150} className="hidden lg:block" />
       </div>
-
-      <Image
+    <div className="w-[90%] lg:w-full mt-24">
+    <Image
         src="/baseballroller.svg"
         alt="Baseball rolling across the top of the page"
-        className={`${Styles.baseball} mt-24`}
+        className={`lg:${Styles.baseball} ${Styles.smallBaseball}  h-[75px] w-[75px] lg:w-[128px] lg:h-[128px]`}
         width={128}
         height={128}
       />
+    </div>
+     
+      <div className="hidden lg:block">
       <PriceDivisions />
+      </div>
       <hr />
-      <div className="flex justify-start my-8">
-        <div className="w-7/12">
+      <div className="lg:flex justify-start my-8">
+        <div className="lg:w-7/12">
           <h3 className="text-3xl text-blue-700">Fall 2024 Season Info</h3>
           <ul className="list-disc ml-4">
             <li className="my-2 font-semibold text-xl">
@@ -72,8 +76,8 @@ export default function BaseballSoftball() {
             </li>
           </ul>
         </div>
-        <div className="w-3/12 mx-auto">
-          <h3 className="text-center text-2xl text-blue-700">
+        <div className="lg:w-3/12 lg:mt-0 my-4 mx-auto">
+          <h3 className="lg:text-center text-2xl text-blue-700">
             How our age brackets work
           </h3>
           <p className="my-4">
@@ -92,7 +96,7 @@ export default function BaseballSoftball() {
       <div id="rec-league" className="my-8 bg-slate-200 p-4 rounded-md">
         <h3 className="text-3xl text-blue-700">Recreational League</h3>
         <aside>$50-130/season (u5/u18) + $20/family *fee</aside>
-        <p className="text-xl my-4 leading-loose">
+        <p className="lg:text-xl my-4 leading-loose">
           SYAA has always prided itself on offering a fun and safe program for
           children, ages 3 to 15. All our teams are focused on enjoying the game
           and teaching the basics. We offer small-sided games, designed to allow
@@ -101,7 +105,7 @@ export default function BaseballSoftball() {
           prioritizes developing players who respect themselves, their
           teammates, their opponents, the officials, and the game.
         </p>
-        <p className="text-xl my-4">
+        <p className="lg:text-xl leading-loose my-4">
           Rec league games are held on Saturdays, and all players will receive
           equal playing time regardless of skill level and experience.
         </p>
@@ -109,14 +113,14 @@ export default function BaseballSoftball() {
       <div id="advanced" className="my-8 bg-slate-200 p-4 rounded-md">
         <h3 className="text-3xl text-blue-700">All-Star Division</h3>
         <aside>$140/season + $20/family *fee</aside>
-        <p className="text-xl my-4 leading-loose">
+        <p className="lg:text-xl my-4 leading-loose">
           Our All-Star program was created as an alternative for players who
           want to remain in recreational games but play at a higher level of
           competition also.The All-Star team provides a player with a good
           competitive challenge and provides the player the opportunity to
           develop his/her skills.
         </p>
-        <p className="text-xl my-4 leading-loose">
+        <p className="lg:text-xl my-4 leading-loose">
           All-Star teams play their games on Saturdays. Mandatory atleast 2
           practices each week. Players are nominated by coaches.
         </p>
@@ -124,7 +128,7 @@ export default function BaseballSoftball() {
       <div id="select" className="my-8 bg-slate-200 p-4 rounded-md">
         <h3 className="text-3xl text-blue-700">Select Travel</h3>
         <aside>$160/season + $20/family *fee</aside>
-        <p className="text-xl my-4 leading-loose">
+        <p className="lg:text-xl my-4 leading-loose">
           The Select Travel program offers a competitive training and match
           environment for players between the ages of 8 and 19 who meet minimum
           standards as set by our director of coaching and coaching staff.
@@ -137,7 +141,7 @@ export default function BaseballSoftball() {
       </div>
       <div id="adult" className="my-8 bg-slate-200 p-4 rounded-md">
         <h3 className="text-3xl text-blue-700">Adult League</h3>
-        <p className="text-xl my-4 leading-loose">Information Pending....</p>
+        <p className="lg:text-xl my-4 leading-loose">Information Pending....</p>
       </div>
       <h4 className="text-3xl text-center my-8">
         Other questions?{" "}
@@ -145,9 +149,9 @@ export default function BaseballSoftball() {
           Contact us
         </a>
       </h4>
-      <div className="flex text-center items-center justify-evenly my-8">
-        <div className="w-fit">
-          <h4>T-Ball Commissioner</h4>
+      <div className="flex flex-wrap text-center items-center lg:justify-evenly my-8">
+        <div className="w-6/12 lg:w-fit border-2 border-blue-700 lg:border-0  lg:mx-auto">
+          <h4 className="text-xl">T-Ball </h4>
           <div className="flex items-center my-2">
             <Image
               src={"/viber.svg"}
@@ -160,8 +164,8 @@ export default function BaseballSoftball() {
           </div>
           <h4>Will Parker</h4>
         </div>
-        <div className="w-fit">
-          <h4>Pinto Commissioner</h4>
+        <div className="w-6/12 lg:w-fit border-2 border-blue-700 lg:border-0  lg:mx-auto">
+          <h4 className="text-xl">Pinto </h4>
           <div className="flex items-center my-2">
             <Image
               src={"/viber.svg"}
@@ -174,8 +178,8 @@ export default function BaseballSoftball() {
           </div>
           <h4>Aaron Carnegie</h4>
         </div>
-        <div className="w-fit">
-          <h4>Mustang Commissioner</h4>
+        <div className="w-6/12 lg:w-fit border-2 border-blue-700 lg:border-0  lg:mx-auto">
+          <h4 className="text-xl">Mustang </h4>
           <div className="flex items-center my-2">
             <Image
               src={"/viber.svg"}
@@ -188,8 +192,8 @@ export default function BaseballSoftball() {
           </div>
           <h4>Corey Holmes</h4>
         </div>
-        <div className="w-fit">
-          <h4>Bronco Commissioner</h4>
+        <div className="w-6/12 lg:w-fit border-2 border-blue-700 lg:border-0  lg:mx-auto">
+          <h4 className="text-xl">Bronco </h4>
           <div className="flex items-center my-2">
             <Image
               src={"/viber.svg"}
@@ -202,8 +206,8 @@ export default function BaseballSoftball() {
           </div>
           <h4>James Morrison</h4>
         </div>
-        <div className="w-fit">
-          <h4>Pony Commissioner</h4>
+        <div className="w-6/12 lg:w-fit border-2 border-blue-700 lg:border-0  lg:mx-auto">
+          <h4 className="text-xl">Pony </h4>
           <div className="flex items-center my-2">
             <Image
               src={"/viber.svg"}
@@ -216,8 +220,8 @@ export default function BaseballSoftball() {
           </div>
           <h4>Brian Smith</h4>
         </div>
-        <div className="w-fit">
-          <h4>Colt Commissioner</h4>
+        <div className="w-6/12 lg:w-fit border-2 border-blue-700 lg:border-0  lg:mx-auto">
+          <h4 className="text-xl">Colt </h4>
           <div className="flex items-center my-2">
             <Image
               src={"/viber.svg"}
@@ -230,8 +234,8 @@ export default function BaseballSoftball() {
           </div>
           <h4>Jeff Beale</h4>
         </div>
-        <div className="w-fit">
-          <h4>Softball Commissioner</h4>
+        <div className="w-6/12 lg:w-fit border-2 border-blue-700 lg:border-0  lg:mx-auto">
+          <h4 className="text-xl">Softball Commissioner</h4>
           <div className="flex items-center my-2">
             <Image
               src={"/viber.svg"}

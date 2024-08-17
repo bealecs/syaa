@@ -5,7 +5,7 @@ import Styles from "./scholarships.module.css";
 
 export default function Scholarships() {
   return (
-    <article className={`${ar.className} w-10/12 mx-auto text-xl`}>
+    <article className={`${ar.className} m-4 lg:w-10/12 lg:mx-auto text-xl`}>
       <PageBackButton href="/" text="Back to main page" />
       <Image
         src={"/logo.svg"}
@@ -15,9 +15,27 @@ export default function Scholarships() {
         className="mx-auto"
       />
       <h1 className="text-4xl text-blue-700">SYAA Scholarships for Seniors</h1>
-      <div className="flex justify-evenly mt-24 min-h-[50vh]">
-      <a href="./scholarships/rod-taylor-scholarship" className="font-semibold text-blue-700 text-3xl border-2 border-blue-700 rounded-md h-fit p-4 bg-zinc-200 w-4/12 hover:bg-blue-700 transition duration-300 linear hover:text-white text-center">
-      <Image
+      <div className=" mt-24 min-h-[50vh] lg:hidden">
+        <a
+          href="./scholarships/rod-taylor-scholarship"
+          className="block my-24 font-semibold text-blue-700 text-3xl border-2 border-blue-700 rounded-md h-fit p-4 bg-zinc-200  hover:bg-blue-700 transition duration-300 linear hover:text-white text-center"
+        >
+          Rod taylor
+        </a>
+
+        <a
+          href="./scholarships/rising-seniors"
+          className="block my-24 font-semibold text-blue-700 text-3xl border-2 border-blue-700 rounded-md h-fit p-4 bg-zinc-200 hover:bg-blue-700 transition duration-300 linear hover:text-white text-center"
+        >
+          Scholarships for Seniors
+        </a>
+      </div>
+      <div className="justify-evenly mt-24 min-h-[50vh] lg:flex hidden">
+        <a
+          href="./scholarships/rod-taylor-scholarship"
+          className="font-semibold text-blue-700 text-3xl border-2 border-blue-700 rounded-md h-fit p-4 bg-zinc-200 w-4/12 hover:bg-blue-700 transition duration-300 linear hover:text-white text-center"
+        >
+          <Image
             src={"/Heart.svg"}
             alt="A graduation cap"
             height={150}
@@ -26,7 +44,10 @@ export default function Scholarships() {
           />
           Rod taylor
         </a>
-        <a href="./scholarships/rising-seniors" className="font-semibold text-blue-700 text-3xl border-2 border-blue-700 rounded-md h-fit p-4 bg-zinc-200 w-4/12 hover:bg-blue-700 transition duration-300 linear hover:text-white text-center">
+        <a
+          href="./scholarships/rising-seniors"
+          className="font-semibold text-blue-700 text-3xl border-2 border-blue-700 rounded-md h-fit p-4 bg-zinc-200 w-4/12 hover:bg-blue-700 transition duration-300 linear hover:text-white text-center"
+        >
           <Image
             src={"/Graduation-hat.svg"}
             alt="A graduation cap"
@@ -34,7 +55,7 @@ export default function Scholarships() {
             width={150}
             className={`mx-auto my-12 ${Styles.tipHat}`}
           />
-            Scholarships for Seniors
+          Scholarships for Seniors
         </a>
       </div>
     </article>
