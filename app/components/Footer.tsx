@@ -18,7 +18,6 @@ export default function Footer() {
             <li><a href="/volunteer">Volunteer</a></li>
             <li><a href="/scholarships">Scholarships</a></li>
             <li><a href="/refund-policy">Refund Policy</a></li>
-            <li><a href="/important-documents">Documents</a></li>
           </div>
         </ul>
       </div>

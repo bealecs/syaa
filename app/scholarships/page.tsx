@@ -20,14 +20,14 @@ export default function Scholarships() {
       <div className=" mt-24 min-h-[50vh] lg:hidden">
         <a
           href="./scholarships/rod-taylor-scholarship"
-          className="block my-24 font-semibold text-blue-700 text-3xl border-2 border-blue-700 rounded-md h-fit p-4 bg-zinc-200  hover:bg-blue-700 transition duration-300 linear hover:text-white text-center"
+          className="block my-24 font-semibold text-blue-700 text-3xl border-2 border-blue-700 h-fit p-4 hover:bg-blue-700 transition duration-300 linear hover:text-white text-center"
         >
           Rod taylor
         </a>
 
         <a
           href="./scholarships/rising-seniors"
-          className="block my-24 font-semibold text-blue-700 text-3xl border-2 border-blue-700 rounded-md h-fit p-4 bg-zinc-200 hover:bg-blue-700 transition duration-300 linear hover:text-white text-center"
+          className="block my-24 font-semibold text-blue-700 text-3xl border-2 border-blue-700 h-fit p-4 hover:bg-blue-700 transition duration-300 linear hover:text-white text-center"
         >
           Scholarships for Seniors
         </a>

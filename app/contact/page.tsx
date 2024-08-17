@@ -4,6 +4,8 @@ import Image from "next/image";
 import { useState } from "react";
 import {ar} from "../components/lib/fonts";
 import PageBackButton from "../components/lib/PageBackButton";
+import Viber from "../components/lib/svg-components/Viber";
+import Email from "../components/lib/svg-components/Email";
 
 export default function Contact() {
   const [contactNumber, setContactNumber] = useState<number>(0);
@@ -41,11 +43,15 @@ export default function Contact() {
               <h2 className="text-center text-blue-700 text-3xl font-bold">Soccer</h2>
               <h4 className="text-center font-semibold text-xl">Vito Basile</h4>
               <div className="flex content-center items-center m-8">
-                <Image src={"/viber.svg"} alt="SYAA Logo" height={50} width={50}/>
+              <div className="hidden lg:block">
+                <Viber />
+              </div>
                 <p className="mx-4 lg:text-2xl">(757) 319-9415</p>
               </div>
               <div className="flex content-center items-center m-8 ">
-                <Image src={"/email.svg"} alt="SYAA Logo" height={50} width={50}/>
+              <div className="hidden lg:block">
+                <Email />
+              </div>
                 <p className="mx-4 lg:text-xl">SuffolkScorpions@gmail.com</p>
               </div>
             </div>
@@ -75,11 +81,15 @@ export default function Contact() {
               <h2 className="text-center text-blue-700 text-3xl font-bold">Baseball/Softball</h2>
               <h4 className="text-center font-semibold text-xl">Joe Bidnick</h4>
               <div className="flex content-center items-center m-8">
-                <Image src={"/viber.svg"} alt="SYAA Logo" height={50} width={50}/>
+              <div className="hidden lg:block">
+                <Viber />
+              </div>
                 <p className="mx-4 lg:text-2xl">(757) 763-0032</p>
               </div>
               <div className="flex content-center items-center m-8 ">
-                <Image src={"/email.svg"} alt="SYAA Logo" height={50} width={50}/>
+              <div className="hidden lg:block">
+                <Email />
+              </div>
                 <p className="mx-4 lg:text-xl">jbid621@gmail.com</p>
               </div>
             </div>
@@ -109,11 +119,15 @@ export default function Contact() {
               <h2 className="text-center text-blue-700 text-3xl font-bold">Field Hockey</h2>
               <h4 className="text-center font-semibold text-xl">Jazmyne Johnson / Sierra Chavis</h4>
               <div className="flex content-center items-center m-8">
-                <Image src={"/viber.svg"} alt="SYAA Logo" height={50} width={50}/>
+              <div className="hidden lg:block">
+                <Viber />
+              </div>
                 <p className="mx-4 lg:text-2xl">(757) 651-7367</p>
               </div>
               <div className="flex content-center items-center m-8 ">
-                <Image src={"/email.svg"} alt="SYAA Logo" height={50} width={50}/>
+                <div className="hidden lg:block">
+                <Email />
+                </div>
                 <p className="mx-4 lg:text-xl">FieldHockey@syaasuffolkfc.org</p>
               </div>
             </div>

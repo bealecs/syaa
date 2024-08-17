@@ -4,7 +4,7 @@ import { ar } from "../components/lib/fonts";
 
 export default function Refund() {
   return (
-    <article className={`${ar.className} lg:w-10/12 mx-auto text-xl`}>
+    <article className={`${ar.className} lg:w-10/12 lg:mx-auto m-4 text-xl`}>
       <PageBackButton href="/" text="Back to main page" />
       <Image
         src={"/logo.svg"}
