@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import { ar } from "./lib/fonts";
 import { useState } from "react";
 import HamburgerMenu from "./lib/svg-components/HamburgerMenu";

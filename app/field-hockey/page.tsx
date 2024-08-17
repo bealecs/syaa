@@ -1,9 +1,9 @@
-import Image from "next/image";
 import PageBackButton from "../components/lib/PageBackButton";
 import PriceDivisions from "./PriceDivisions";
 import Styles from "./FieldHockey.module.css";
 import FAQ from "../components/lib/FAQ";
 import HockeyBall from "../components/lib/svg-components/HockeyBall";
+import Logo from "../components/lib/svg-components/Logo";
 
 export default function FieldHockey() {
   const currentYear = new Date().getFullYear();
@@ -62,7 +62,7 @@ export default function FieldHockey() {
             </a>
           </div>
         </div>
-        <Image src="/logo.svg" alt="SYAA logo" height={150} width={150} className="hidden md:block"/>
+        <Logo />
       </div>
       <div className={` ${Styles.hockeyBall} w-fit mt-24`}>
         <HockeyBall />

@@ -6,6 +6,7 @@ import {ar} from "../components/lib/fonts";
 import PageBackButton from "../components/lib/PageBackButton";
 import Viber from "../components/lib/svg-components/Viber";
 import Email from "../components/lib/svg-components/Email";
+import Logo from "../components/lib/svg-components/Logo";
 
 export default function Contact() {
   const [contactNumber, setContactNumber] = useState<number>(0);
@@ -77,7 +78,9 @@ export default function Contact() {
               {"<"}
             </button>
             <div className="bg-slate-200 min-h-[40vh] lg:w-5/12 w-9/12 rounded-md">
-              <Image src={"/logo.svg"} alt="SYAA Logo" height={150} width={150} className="mx-auto"/>
+              <div className="mx-auto">
+                <Logo />
+              </div>
               <h2 className="text-center text-blue-700 text-3xl font-bold">Baseball/Softball</h2>
               <h4 className="text-center font-semibold text-xl">Joe Bidnick</h4>
               <div className="flex content-center items-center m-8">

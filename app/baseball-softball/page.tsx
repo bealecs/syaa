@@ -1,11 +1,9 @@
-import Image from "next/image";
 import PageBackButton from "../components/lib/PageBackButton";
 import PriceDivisions from "./PriceDivisions";
-import BaseballIcon, {
-  BaseballIcon2,
-} from "../components/lib/svg-components/BaseballIcon";
+import { BaseballIcon2 } from "../components/lib/svg-components/BaseballIcon";
 import Styles from "./ball.module.css";
 import Viber from "../components/lib/svg-components/Viber";
+import Logo from "../components/lib/svg-components/Logo";
 
 export default function BaseballSoftball() {
   return (
@@ -43,13 +41,7 @@ export default function BaseballSoftball() {
             </a>
           </div>
         </div>
-        <Image
-          src="/logo.svg"
-          alt="SYAA logo"
-          height={150}
-          width={150}
-          className="hidden lg:block"
-        />
+        <Logo />
       </div>
       <div className={`w-fit mt-24 ${Styles.baseball}`}>
         <BaseballIcon2 />

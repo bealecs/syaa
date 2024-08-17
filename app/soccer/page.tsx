@@ -4,6 +4,7 @@ import PriceDivisions from "./PriceDivisions";
 import Styles from "./soccer.module.css";
 import FAQ from "../components/lib/FAQ";
 import Soccerball2 from "../components/lib/svg-components/Soccerball2";
+import Logo from "../components/lib/svg-components/Logo";
 
 const SFAQ = [
   {
@@ -75,7 +76,7 @@ export default function Soccer() {
             </a>
           </div>
         </div>
-        <Image src="/logo.svg" alt="SYAA logo" height={150} width={150} className="hidden lg:block" />
+        <Logo />
       </div>
       <div className={`w-fit mt-24 ${Styles.soccerBall}`}>
       <Soccerball2 />

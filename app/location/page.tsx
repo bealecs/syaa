@@ -1,18 +1,15 @@
 import Image from "next/image";
 import PageBackButton from "../components/lib/PageBackButton";
 import { ar } from "../components/lib/fonts";
+import Logo from "../components/lib/svg-components/Logo";
 
 export default function Location() {
   return (
     <article className={`${ar.className} m-4 lg:w-10/12 min-h-[60vh] lg:mx-auto text-xl`}>
       <PageBackButton href="/" text="Back to main page" />
-      <Image
-        src={"/logo.svg"}
-        alt="SYAA Logo"
-        height={150}
-        width={150}
-        className="mx-auto my-4"
-      />
+      <div className="mx-auto my-4">
+        <Logo />
+      </div>
       <h1 className="text-4xl text-blue-700">SYAA Location</h1>
       <p className="text-2xl font-semibold mt-8">
         SYAA playing fields are located on either side of King’s Fork Road, just

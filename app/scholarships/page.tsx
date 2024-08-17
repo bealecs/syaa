@@ -4,18 +4,15 @@ import { ar } from "../components/lib/fonts";
 import Styles from "./scholarships.module.css";
 import ScholarshipSVG from "../components/lib/svg-components/ScholarshipSVG";
 import Heart from "../components/lib/svg-components/Heart";
+import Logo from "../components/lib/svg-components/Logo";
 
 export default function Scholarships() {
   return (
     <article className={`${ar.className} m-4 lg:w-10/12 lg:mx-auto text-xl`}>
       <PageBackButton href="/" text="Back to main page" />
-      <Image
-        src={"/logo.svg"}
-        alt="SYAA Logo"
-        height={150}
-        width={150}
-        className="mx-auto"
-      />
+      <div className="mx-auto">
+        <Logo />
+      </div>
       <h1 className="text-4xl text-blue-700">SYAA Scholarships for Seniors</h1>
       <div className=" mt-24 min-h-[50vh] lg:hidden">
         <a

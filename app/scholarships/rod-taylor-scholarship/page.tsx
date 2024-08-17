@@ -1,18 +1,14 @@
-import Image from "next/image";
 import PageBackButton from "../../components/lib/PageBackButton";
 import { ar } from "../../components/lib/fonts";
+import Logo from "@/app/components/lib/svg-components/Logo";
 
 export default function RodTaylorScholarship() {
   return (
     <article className={`${ar.className} m-4 lg:w-10/12 lg:mx-auto text-xl`}>
       <PageBackButton href="/scholarships" text="Back to previous page" />
-      <Image
-        src={"/logo.svg"}
-        alt="SYAA Logo"
-        height={150}
-        width={150}
-        className="mx-auto"
-      />
+      <div className="mx-auto">
+        <Logo />
+      </div>
       <h1 className="text-4xl text-blue-700">Rod Taylor Scholarship Fund</h1>
       <h4 className="text-blue-700 my-8 text-2xl">
         The scholarship, in the amount of $750 will be awarded each July at the
