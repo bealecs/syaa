@@ -4,7 +4,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
   return (
     <>
-    <section className={`${ar.className} p-4 border-t-2 flex bg-[#0066CC] text-[#F0F0F0] justify-evenly`}>
+    <section className={`${ar.className} p-4 border-t-2 lg:flex bg-[#0066CC] text-[#F0F0F0] justify-evenly`}>
       <div className="flex-col mb-4">
         <h4 className="text-2xl lg:text-3xl font-semibold">Resources</h4>
         <ul className="flex space-x-4">

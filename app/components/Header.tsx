@@ -58,7 +58,7 @@ export default function Header() {
         </li>
         <li className="p-4 border-b border-gray-300">
           <a
-            href="/about"
+            href={sportsClicked ? "/soccer" : "/about"}
             className="text-[#F0F0F0] text-xl font-semibold hover:text-red-500"
           >
             {sportsClicked ? "Soccer" : "About SYAA"}
@@ -66,7 +66,7 @@ export default function Header() {
         </li>
         <li className="p-4 border-b border-gray-300">
           <a
-            href="/volunteer"
+            href={sportsClicked ? "/baseball-softball" : "/volunteer"}
             className="text-[#F0F0F0] text-xl font-semibold hover:text-red-500"
           >
             {sportsClicked ? "Baseball/Softball" : "Volunteer"}
@@ -76,7 +76,7 @@ export default function Header() {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://login.stacksports.com/login?client_id=612b0399b1854a002e427f78&redirect_uri=https://core-api.bluesombrero.com/login/redirect/portal/1954&app_name=Suffolk+Youth+Athletic+Association&portalid=1954&instancekey=clubs"
+            href={sportsClicked ? "/field-hockey" : "https://login.stacksports.com/login?client_id=612b0399b1854a002e427f78&redirect_uri=https://core-api.bluesombrero.com/login/redirect/portal/1954&app_name=Suffolk+Youth+Athletic+Association&portalid=1954&instancekey=clubs"}
             className="text-[#F0F0F0] text-xl font-semibold hover:text-red-500"
           >
             {sportsClicked ? "Field Hockey" : "Register Now"}

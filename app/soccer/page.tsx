@@ -44,10 +44,10 @@ export default function Soccer() {
         <div className="flex-col">
           <h1 className="lg:text-6xl text-3xl text-blue-700">SYAA Soccer</h1>
           <h4 className="my-4">Sections:</h4>
-          <div className="flex text-blue-700 underline items-center">
+          <div className="flex lg:w-full flex-wrap text-blue-700 underline items-center">
             <a
               href="./soccer/#rec-league"
-              className="border-r-2 border-blue-700 pr-4"
+              className="border-r-2 border-blue-700 px-4"
             >
               Recreational League
             </a>
@@ -65,11 +65,11 @@ export default function Soccer() {
             </a>
             <a
               href="./soccer/#top-soccer"
-              className="px-4"
+              className="px-4 border-r-2 border-r-blue-700"
             >
               TOPsoccer
             </a>
-            <a href="./soccer/#adult" className="pl-4 border-l-2 border-l-blue-700">
+            <a href="./soccer/#adult" className="px-4 border-r-2 border-r-blue-700">
               Adult League
             </a>
           </div>
@@ -274,7 +274,7 @@ export default function Soccer() {
       </div>
       <FAQ sport="Soccer" faq={SFAQ} />
       <h4 className="text-3xl text-center my-8">
-        Any questions?{" "}
+        Further questions?{" "}
         <a href="/contact" className="underline text-blue-700">
           Contact us
         </a>

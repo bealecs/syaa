@@ -1,9 +1,14 @@
-import Image from "next/image";
 import Styles from "./carousel.module.css";
 import { ar } from "../lib/fonts"
+import Soccerball from "../lib/svg-components/Soccerball";
+import Cutlery from "../lib/svg-components/Cutlery";
+import ScholarshipSVG from "../lib/svg-components/ScholarshipSVG";
+import Storm from "../lib/svg-components/Storm";
+import Stadium from "../lib/svg-components/Stadium";
+import Parking from "../lib/svg-components/Parking";
 
 interface Icons {
-  src: string;
+  src: React.ReactNode;
   p: string;
   alt: string;
 }
@@ -11,32 +16,32 @@ interface Icons {
 export default function Carousel() {
   const iconArray: Icons[] = [
     {
-      src: "/soccerBall.svg",
+      src: <Soccerball />,
       p: "25 Quality Fields",
       alt: "Soccer ball icon",
     },
     {
-      src: "/Cutlery.svg",
+      src: <Cutlery />,
       p: "5-Star Concessions",
       alt: "Silverware icon signifying concession stands",
     },
     {
-      src: "/Stadium.svg",
+      src: <Stadium />,
       p: "Night games",
       alt: "Floodlight icon signifying night games can be played",
     },
     {
-      src: "/Storm.svg",
+      src: <Storm />,
       p: "Less cancellations",
       alt: "Rain cloud icon signifying less cancellations will be made due to privately owned fields",
     },
     {
-      src: "/Graduation-hat.svg",
+      src: <ScholarshipSVG />,
       p: "Scholarships for Seniors",
       alt: "Graduate cap icon signifying scholarships can be awarded to seniors",
     },
     {
-      src: "/parking.svg",
+      src: <Parking />,
       p: "Lots of Parking",
       alt: "A parking sign with a parked car next to it, signifying that SYAA has a lot of parking spots available.",
     },
@@ -48,13 +53,7 @@ export default function Carousel() {
         {iconArray.map((icon, index) => {
           return (
             <div key={index} className={Styles["icon-wrapper"]}>
-              <Image
-                src={icon.src}
-                alt={icon.alt}
-                height={150}
-                width={150}
-                className="mx-auto w-[150px] h-[150px]"
-              />
+              {icon.src}
               <p className="lg:text-3xl text-xl text-center font-bold">{icon.p}</p>
             </div>
           );
@@ -62,13 +61,7 @@ export default function Carousel() {
         {iconArray.map((icon, index) => {
           return (
             <div key={index} className={Styles["icon-wrapper"]}>
-              <Image
-                src={icon.src}
-                alt={icon.alt}
-                height={150}
-                width={150}
-                className="mx-auto w-[150px] h-[150px]"
-              />
+              {icon.src}
               <p className="text-xl lg:text-3xl text-center font-bold">{icon.p}</p>
             </div>
           );

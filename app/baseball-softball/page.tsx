@@ -144,7 +144,7 @@ export default function BaseballSoftball() {
         <p className="lg:text-xl my-4 leading-loose">Information Pending....</p>
       </div>
       <h4 className="text-3xl text-center my-8">
-        Other questions?{" "}
+        Further questions?{" "}
         <a href="/contact" className="underline text-blue-700">
           Contact us
         </a>

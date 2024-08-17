@@ -129,7 +129,7 @@ export default function FieldHockey() {
       </div>
       <FAQ sport="Field-Hockey" faq={FHFAQ} />
       <h4 className="text-3xl text-center my-8">
-        Other questions?{" "}
+        Further questions?{" "}
         <a href="/contact" className="underline text-blue-700">
           Contact us
         </a>
