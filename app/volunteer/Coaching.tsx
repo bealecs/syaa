@@ -141,16 +141,16 @@ export default function Coaching() {
         </div>
       </ul>
       <p className="text-center">Please <a href="mailto:suffolkscorpions@gmail.com" className="text-blue-700 underline">contact Vito</a> with any questions</p>
-      <div className="flex justify-evenly">
-        <button className="transition duration-300 linear hover:text-white hover:bg-blue-700 hover:border-black border-2 border-blue-700 text-xl p-4 w-fit my-8">
+      <div className="lg:flex text-center my-8 lg:justify-evenly">
+        <button className="transition duration-300 linear hover:text-white hover:bg-blue-700 hover:border-black border-2 border-blue-700 text-xl p-2 lg:p-4 w-full lg:w-fit lg:my-8">
           <a href="https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=M5ZK5XWQF7QAY&ssrt=1723503674404" target="_blank" rel="noopener noreffer">
             Donate to SYAA
           </a>
         </button>
-        <button className="transition duration-300 linear hover:text-white hover:bg-blue-700 hover:border-black border-2 border-blue-700 text-xl p-4 w-fit my-8">
+        <button className="transition duration-300 linear hover:text-white hover:bg-blue-700 hover:border-black border-2 border-blue-700 text-xl p-2 lg:p-4 w-full lg:w-fit lg:my-8">
           <a href="/advertisingSign.pdf" target="_blank">Advertising Sign Sponsorship</a>
         </button>
-        <button className="transition duration-300 linear hover:text-white hover:bg-blue-700 hover:border-black border-2 border-blue-700 text-xl p-4 w-fit my-8">
+        <button className="transition duration-300 linear hover:text-white hover:bg-blue-700 hover:border-black border-2 border-blue-700 text-xl p-2 lg:p-4 w-full lg:w-fit lg:my-8">
           <a href="/teamSponsor.pdf" target="_blank">Team Sponsorship</a>
         </button>
       </div>

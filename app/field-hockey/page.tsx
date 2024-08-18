@@ -42,7 +42,7 @@ export default function FieldHockey() {
   ];
   
   return (
-    <section className="m-4 lg:w-10/12 lg:mx-auto">
+    <section className="m-4 lg:w-10/12 lg:mx-auto overflow-x-hidden">
       <div className="my-8">
         <PageBackButton href="/" text="Back to main page" />
       </div>

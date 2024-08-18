@@ -1,4 +1,3 @@
-
 export default function SubHero() {
   return (
     <article className="m-4 lg:w-10/12 lg:mx-auto">
@@ -7,14 +6,15 @@ export default function SubHero() {
       </h1>
       <div className="lg:flex">
         <div className="lg:flex lg:flex-col">
-        <h2 className="text-2xl lg:text-3xl font-semibold mt-8">Why SYAA?</h2>
-        <aside className="lg:mb-4">Suffolk Youth Athletic Association</aside>
+          <h2 className="text-2xl lg:text-3xl font-semibold mt-8">Why SYAA?</h2>
+          <aside className="lg:mb-4">Suffolk Youth Athletic Association</aside>
           <iframe
-            src="https://player.vimeo.com/video/464528560?h=b104bb1c15"
+            src="https://player.vimeo.com/video/464528560?h=b104bb1c15&autoplay=1&muted=1"
             width="640"
             height="360"
             allow="autoplay; fullscreen; picture-in-picture"
             allowFullScreen
+            title="SYAA Facilities - Aerial Overhead Video"
             className="lg:w-[640px] lg:h-[360px] w-[400px] h-[250px]"
           ></iframe>
           <p className="font-semibold italic mb-8">
@@ -40,7 +40,7 @@ export default function SubHero() {
             approved courses. We’re also all-volunteer operated and welcome
             parent involvement in running our programs.
           </p>
-          <a href="/about" className="block my-8 w-fit border-2 border-blue-700 w-fit p-4 transition duration-300 linear hover:text-white hover:bg-blue-700 hover:border-black">Read more about SYAA</a>
+          <a href="/about-page" className="block my-8 text-xl w-fit border-2 border-blue-700 w-fit p-4 transition duration-300 linear hover:text-white hover:bg-blue-700 hover:border-black">Read more about SYAA</a>
         </div>
       </div>
     </article>

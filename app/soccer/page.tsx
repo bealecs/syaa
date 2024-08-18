@@ -1,4 +1,3 @@
-import Image from "next/image";
 import PageBackButton from "../components/lib/PageBackButton";
 import PriceDivisions from "./PriceDivisions";
 import Styles from "./soccer.module.css";
@@ -38,7 +37,7 @@ const SFAQ = [
 
 export default function Soccer() {
   return (
-    <section className="m-4 lg:w-10/12 lg:mx-auto">
+    <section className="m-4 lg:w-10/12 lg:mx-auto overflow-x-hidden">
       <div className="my-8">
         <PageBackButton href="/" text="Back to main page" />
       </div>

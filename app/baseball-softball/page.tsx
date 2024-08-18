@@ -7,7 +7,7 @@ import Logo from "../components/lib/svg-components/Logo";
 
 export default function BaseballSoftball() {
   return (
-    <section className="lg:my-12 lg:w-10/12 lg:mx-auto mx-4">
+    <section className="lg:my-12 lg:w-10/12 lg:mx-auto mx-4 overflow-x-hidden">
       <div className="lg:my-8">
         <PageBackButton href="/" text="Back to main page" />
       </div>
@@ -148,7 +148,7 @@ export default function BaseballSoftball() {
         </a>
       </h4>
       <div className="flex flex-wrap text-center items-center lg:justify-evenly my-8">
-        <div className="w-6/12 lg:w-fit border-2 border-blue-700 lg:border-0  lg:mx-auto">
+        <div className="w-6/12 my-8 lg:w-fit lg:border-0  lg:mx-auto">
           <h4 className="text-xl">T-Ball </h4>
           <div className="flex items-center my-2">
             <Viber />
@@ -156,7 +156,7 @@ export default function BaseballSoftball() {
           </div>
           <h4>Will Parker</h4>
         </div>
-        <div className="w-6/12 lg:w-fit border-2 border-blue-700 lg:border-0  lg:mx-auto">
+        <div className="w-6/12 my-8 lg:w-fit lg:border-0  lg:mx-auto">
           <h4 className="text-xl">Pinto </h4>
           <div className="flex items-center my-2">
             <Viber />
@@ -164,7 +164,7 @@ export default function BaseballSoftball() {
           </div>
           <h4>Aaron Carnegie</h4>
         </div>
-        <div className="w-6/12 lg:w-fit border-2 border-blue-700 lg:border-0  lg:mx-auto">
+        <div className="w-6/12 my-8 lg:w-fit lg:border-0  lg:mx-auto">
           <h4 className="text-xl">Mustang </h4>
           <div className="flex items-center my-2">
             <Viber />
@@ -172,7 +172,7 @@ export default function BaseballSoftball() {
           </div>
           <h4>Corey Holmes</h4>
         </div>
-        <div className="w-6/12 lg:w-fit border-2 border-blue-700 lg:border-0  lg:mx-auto">
+        <div className="w-6/12 my-8 lg:w-fit lg:border-0  lg:mx-auto">
           <h4 className="text-xl">Bronco </h4>
           <div className="flex items-center my-2">
             <Viber />
@@ -180,7 +180,7 @@ export default function BaseballSoftball() {
           </div>
           <h4>James Morrison</h4>
         </div>
-        <div className="w-6/12 lg:w-fit border-2 border-blue-700 lg:border-0  lg:mx-auto">
+        <div className="w-6/12 my-8 lg:w-fit lg:border-0  lg:mx-auto">
           <h4 className="text-xl">Pony </h4>
           <div className="flex items-center my-2">
             <Viber />
@@ -188,7 +188,7 @@ export default function BaseballSoftball() {
           </div>
           <h4>Brian Smith</h4>
         </div>
-        <div className="w-6/12 lg:w-fit border-2 border-blue-700 lg:border-0  lg:mx-auto">
+        <div className="w-6/12 my-8 lg:w-fit lg:border-0  lg:mx-auto">
           <h4 className="text-xl">Colt </h4>
           <div className="flex items-center my-2">
             <Viber />
@@ -196,8 +196,8 @@ export default function BaseballSoftball() {
           </div>
           <h4>Jeff Beale</h4>
         </div>
-        <div className="w-6/12 lg:w-fit border-2 border-blue-700 lg:border-0  lg:mx-auto">
-          <h4 className="text-xl">Softball Commissioner</h4>
+        <div className="w-6/12 my-8 lg:w-fit lg:border-0  lg:mx-auto">
+          <h4 className="text-xl">Softball</h4>
           <div className="flex items-center my-2">
             <Viber />
             <p className="mx-2">(804) 926-6087</p>
