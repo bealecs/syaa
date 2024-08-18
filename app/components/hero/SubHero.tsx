@@ -4,7 +4,7 @@ export default function SubHero() {
       <h1 className="text-blue-700 text-3xl lg:text-5xl text-center font-semibold italic mt-6">
         Uniting Youth. Building Strength. Empowering Community.
       </h1>
-      <div className="lg:flex">
+      <div className="flex-wrap">
         <div className="lg:flex lg:flex-col">
           <h2 className="text-2xl lg:text-3xl font-semibold mt-8">Why SYAA?</h2>
           <aside className="lg:mb-4">Suffolk Youth Athletic Association</aside>
@@ -25,7 +25,7 @@ export default function SubHero() {
             <a href="https://vimeo.com">Vimeo</a>.
           </p>
         </div>
-        <div className="lg:mt-24 lg:mx-8">
+        <div className=" min-w-10/12">
           <p className="leading-loose text-xl">
             SYAA understands the importance of quality time, that’s why we’re
             proud to be the only club in Tidewater where you can play 3 youth

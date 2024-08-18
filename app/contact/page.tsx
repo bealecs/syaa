@@ -40,7 +40,7 @@ export default function Contact() {
               {"<"}
             </button>
             <div className="bg-slate-200 min-h-[40vh] lg:w-5/12 w-9/12 rounded-md">
-            <div className="mx-auto">
+            <div className="w-fit mx-auto">
             <Logo />
             </div>
               <h2 className="text-center text-blue-700 text-3xl font-bold">Soccer</h2>

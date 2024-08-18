@@ -27,7 +27,7 @@ export default function Header() {
         <Logo />
       </a>
 
-      <button onClick={handleClick} className="block md:hidden">
+      <button onClick={handleClick} className="block lg:hidden">
         {hamburgerClicked ? (
           <Close />
         ) : (
@@ -38,7 +38,7 @@ export default function Header() {
       <ul
         className={`${
           hamburgerClicked ? "block" : "hidden"
-        } absolute top-[140px] left-0 w-full bg-[#0066CC] text-center md:hidden`}
+        } absolute top-[140px] left-0 w-full bg-[#0066CC] text-center lg:hidden`}
       >
         <li className="p-2 border-b border-gray-300">
           <button
@@ -76,7 +76,7 @@ export default function Header() {
         </li>
       </ul>
 
-      <ul className="hidden md:flex justify-evenly lg:w-7/12 text-[#F0F0F0] text-3xl font-semibold">
+      <ul className="hidden lg:flex justify-evenly lg:w-7/12 text-[#F0F0F0] text-3xl font-semibold">
         <li className="transition duration-300 linear hover:underline hover:text-red-500">
           <a href="/about">About SYAA</a>
         </li>
