@@ -9,7 +9,7 @@ export default function SubHero() {
           <h2 className="text-2xl lg:text-3xl font-semibold mt-8">Why SYAA?</h2>
           <aside className="lg:mb-4">Suffolk Youth Athletic Association</aside>
           <iframe
-            src="https://player.vimeo.com/video/464528560?h=b104bb1c15&autoplay=1&muted=1"
+            src="https://player.vimeo.com/video/464528560?h=b104bb1c15&autoplay=1&muted=1&loop=1"
             width="640"
             height="360"
             allow="autoplay; fullscreen; picture-in-picture"
