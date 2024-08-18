@@ -41,7 +41,9 @@ export default function BaseballSoftball() {
             </a>
           </div>
         </div>
+        <div className="w-fit mx-auto">
         <Logo />
+        </div>
       </div>
       <div className={`w-fit mt-24 ${Styles.baseball}`}>
         <BaseballIcon2 />

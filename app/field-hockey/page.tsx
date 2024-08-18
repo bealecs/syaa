@@ -62,6 +62,9 @@ export default function FieldHockey() {
             </a>
           </div>
         </div>
+        <div className="w-fit mx-auto">
+        <Logo />
+        </div>
         <Logo />
       </div>
       <div className={` ${Styles.hockeyBall} w-fit mt-24`}>
