@@ -1,3 +1,7 @@
+import Ad from "../components/lib/svg-components/Ad";
+import DonateHand from "../components/lib/svg-components/DonateHand";
+import Tshirt from "../components/lib/svg-components/Tshirt";
+
 export default function Coaching() {
   return (
     <div>
@@ -142,17 +146,30 @@ export default function Coaching() {
       </ul>
       <p className="text-center">Please <a href="mailto:suffolkscorpions@gmail.com" className="text-blue-700 underline">contact Vito</a> with any questions</p>
       <div className="lg:flex text-center my-8 lg:justify-evenly">
-        <button className="transition duration-300 linear hover:text-white hover:bg-blue-700 hover:border-black border-2 border-blue-700 text-xl p-2 lg:p-4 w-full lg:w-fit lg:my-8">
-          <a href="https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=M5ZK5XWQF7QAY&ssrt=1723503674404" target="_blank" rel="noopener noreffer">
+        <div className="flex lg:flex-col items-center text-xl p-2 lg:p-4 w-full lg:w-fit my-8">
+          <div className="rounded-full">
+          <DonateHand />
+          </div>
+          <a href="https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=M5ZK5XWQF7QAY&ssrt=1723503674404" target="_blank" rel="noopener noreffer" className="w-full text-3xl underline my-4 text-blue-700">
             Donate to SYAA
           </a>
-        </button>
-        <button className="transition duration-300 linear hover:text-white hover:bg-blue-700 hover:border-black border-2 border-blue-700 text-xl p-2 lg:p-4 w-full lg:w-fit lg:my-8">
-          <a href="/advertisingSign.pdf" target="_blank">Advertising Sign Sponsorship</a>
-        </button>
-        <button className="transition duration-300 linear hover:text-white hover:bg-blue-700 hover:border-black border-2 border-blue-700 text-xl p-2 lg:p-4 w-full lg:w-fit lg:my-8">
-          <a href="/teamSponsor.pdf" target="_blank">Team Sponsorship</a>
-        </button>
+        </div>
+        <div className="flex lg:flex-col items-center text-xl p-2 lg:p-4 w-full lg:w-fit my-8">
+          <div className="rounded-full">
+          <Ad />
+          </div>
+          <a href="https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=M5ZK5XWQF7QAY&ssrt=1723503674404" target="_blank" rel="noopener noreffer" className="w-full text-3xl underline my-4 text-blue-700">
+            Advertising Sign Sponsorship
+          </a>
+        </div>
+        <div className="flex lg:flex-col items-center text-xl p-2 lg:p-4 w-full lg:w-fit my-8">
+          <div className="rounded-full">
+          <Tshirt />
+          </div>
+          <a href="https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=M5ZK5XWQF7QAY&ssrt=1723503674404" target="_blank" rel="noopener noreffer" className="w-full text-3xl underline my-4 text-blue-700">
+            Team Sponsorship
+          </a>
+        </div>
       </div>
     </div>
   );
