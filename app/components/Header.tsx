@@ -78,7 +78,7 @@ export default function Header() {
 
       <ul className="hidden lg:flex justify-evenly lg:w-7/12 text-[#F0F0F0] text-3xl font-semibold">
         <li className="transition duration-300 linear hover:underline hover:text-red-500">
-          <a href="/about">About SYAA</a>
+          <a href="/about-page">About SYAA</a>
         </li>
         <li className="transition duration-300 linear hover:underline hover:text-red-500">
           <a href="/volunteer">Volunteer</a>

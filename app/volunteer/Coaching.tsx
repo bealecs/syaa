@@ -38,7 +38,7 @@ export default function Coaching() {
         <li className="my-2">
           <b>
             Display good sportsmanship and promote{" "}
-            <a href="/about/#philosophy" className="text-blue-700 underline">
+            <a href="/about-page/#philosophy" className="text-blue-700 underline">
               SYAA’s philosophy
             </a>{" "}
             of everyone plays and has fun.
